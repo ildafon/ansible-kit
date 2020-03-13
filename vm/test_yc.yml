@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  roles:
+    - yc-user_create_local
+    - { role: yc_create_vm, instance_name: "yc-instance-2" }
+    - { role: yc_vm_info, instance_name: "yc-instance-2"}
+    - { role: yc_delete_vm, instance_name: "yc-instance-2" }
+

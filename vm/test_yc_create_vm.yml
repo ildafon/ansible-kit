@@ -1,0 +1,4 @@
+---
+- hosts: localhost
+  roles:
+    - yc_create_vm

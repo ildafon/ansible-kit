@@ -1,0 +1,11 @@
+---
+# tasks file for yc_delete_vm
+- name: Delete VM
+  shell: >    
+    yc compute instance delete {{ instance_name }}
+  register: VM_deletion_report
+
+
+- name: Display result
+  debug:
+    msg: "{{ VM_deletion_report }}"

@@ -1,0 +1,6 @@
+---
+# tasks file for yc-user_create_local
+- name: Genetate key pair for yc-user
+  shell: > 
+   ssh-keygen -t rsa -f ~/.ssh/yc-user -C yc-user -P "" 
+   creates="~/.ssh/yc-user.pub"

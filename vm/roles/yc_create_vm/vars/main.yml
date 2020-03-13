@@ -1,0 +1,6 @@
+---
+# vars file for yc_create_vm
+
+instance_memory_GB: 2
+instance_cores: 2
+instance_os: centos-7

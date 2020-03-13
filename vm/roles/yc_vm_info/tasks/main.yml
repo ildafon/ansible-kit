@@ -1,0 +1,11 @@
+---
+# tasks file for yc_vm_info
+- name: VM info
+  shell: >
+    yc compute instance get {{ instance_name }}  
+  register: VM_info_report
+
+
+- name: Display result
+  debug:
+    msg: "{{ VM_info_report }}"

@@ -1,0 +1,4 @@
+---
+- hosts: localhost
+  roles:
+    - { role: yc_delete_vm, instance_name: "yc-instance-2" }
